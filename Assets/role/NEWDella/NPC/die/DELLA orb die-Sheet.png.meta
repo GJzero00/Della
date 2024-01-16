@@ -1,0 +1,365 @@
+fileFormatVersion: 2
+guid: e5bbecf43a432aa4a8da42bbbb85f3b7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6455559466805892014
+    second: DELLA orb die-Sheet_0
+  - first:
+      213: 4650076094284094955
+    second: DELLA orb die-Sheet_1
+  - first:
+      213: -2780736999855207662
+    second: DELLA orb die-Sheet_3
+  - first:
+      213: 1685934889861881094
+    second: DELLA orb die-Sheet_5
+  - first:
+      213: 1828857342052717135
+    second: DELLA orb die-Sheet_7
+  - first:
+      213: -6312372979018811098
+    second: DELLA orb die-Sheet_9
+  - first:
+      213: 2544333705187928774
+    second: DELLA orb die-Sheet_11
+  - first:
+      213: -7627633263494559666
+    second: DELLA orb die-Sheet_13
+  - first:
+      213: 6420515525338031965
+    second: DELLA orb die-Sheet_14
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DELLA orb die-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 6
+        width: 57
+        height: 91
+      alignment: 9
+      pivot: {x: 0.64661723, y: 0.54791737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3106dc121c69950800000000000000
+      internalID: 6455559466805892014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA orb die-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 6
+        width: 57
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bedd6521293688040800000000000000
+      internalID: 4650076094284094955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA orb die-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 6
+        width: 58
+        height: 84
+      alignment: 9
+      pivot: {x: 0.63891757, y: 0.49179807}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b48dd7e66d869d0800000000000000
+      internalID: -2780736999855207662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA orb die-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 6
+        width: 59
+        height: 85
+      alignment: 9
+      pivot: {x: 0.65185237, y: 0.4656688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d97a099d4a56710800000000000000
+      internalID: 1685934889861881094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA orb die-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 6
+        width: 53
+        height: 84
+      alignment: 9
+      pivot: {x: 0.72909606, y: 0.48892075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42dae91018616910800000000000000
+      internalID: 1828857342052717135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA orb die-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 5
+        width: 57
+        height: 86
+      alignment: 9
+      pivot: {x: 0.6533096, y: 0.46544826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6293fcf4832f568a0800000000000000
+      internalID: -6312372979018811098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA orb die-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 6
+        width: 52
+        height: 85
+      alignment: 9
+      pivot: {x: 0.7132193, y: 0.49076408}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6caa7cf360a4f4320800000000000000
+      internalID: 2544333705187928774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA orb die-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 71
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e480474b5f3352690800000000000000
+      internalID: -7627633263494559666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA orb die-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 6
+        width: 51
+        height: 84
+      alignment: 9
+      pivot: {x: 0.66782755, y: 0.50434047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5767aa5ad04a1950800000000000000
+      internalID: 6420515525338031965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DELLA orb die-Sheet_0: 6455559466805892014
+      DELLA orb die-Sheet_1: 4650076094284094955
+      DELLA orb die-Sheet_11: 2544333705187928774
+      DELLA orb die-Sheet_13: -7627633263494559666
+      DELLA orb die-Sheet_14: 6420515525338031965
+      DELLA orb die-Sheet_3: -2780736999855207662
+      DELLA orb die-Sheet_5: 1685934889861881094
+      DELLA orb die-Sheet_7: 1828857342052717135
+      DELLA orb die-Sheet_9: -6312372979018811098
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - key
+  - coin
+  - enemies
+  - Collection
+  - UI
+  - NPC
+  - CD
+  - bullet
+  - Fire
+  - PlayerAttack
+  - enemy_track
+  - Bossenemies
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - TriggerBox
+  - Water
+  - UI
+  - Ground
+  - background
+  - UI2
+  - Player
+  - enemy
+  - NPC
+  - runcoolGround
+  - runcoolPlayer
+  - bullet
+  - enemy_melee
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: back
+    uniqueID: 1853271711
+    locked: 0
+  - name: collection
+    uniqueID: 1003736039
+    locked: 0
+  - name: back2
+    uniqueID: 4180068009
+    locked: 0
+  - name: Boss
+    uniqueID: 622814073
+    locked: 0
+  - name: back3
+    uniqueID: 2651348487
+    locked: 0
+  - name: back4
+    uniqueID: 2194261001
+    locked: 0
+  - name: ground
+    uniqueID: 3948335477
+    locked: 0
+  - name: thing
+    uniqueID: 2745478331
+    locked: 0
+  - name: NPC
+    uniqueID: 928200529
+    locked: 0
+  - name: store
+    uniqueID: 1368377697
+    locked: 0
+  - name: boss
+    uniqueID: 69449045
+    locked: 0
+  - name: EnemyHP
+    uniqueID: 3907802619
+    locked: 0
+  - name: role
+    uniqueID: 2816014313
+    locked: 0
+  - name: back5
+    uniqueID: 2007163157
+    locked: 0
+  - name: trap
+    uniqueID: 360957019
+    locked: 0
+  - name: effect
+    uniqueID: 2784468883
+    locked: 0

@@ -1,0 +1,365 @@
+fileFormatVersion: 2
+guid: daf3aaf3b5a92d54bba04ab0650775b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2267295208721634394
+    second: DELLA stay-Sheet_0
+  - first:
+      213: -8708376833700971665
+    second: DELLA stay-Sheet_1
+  - first:
+      213: -3671447753996977336
+    second: DELLA stay-Sheet_2
+  - first:
+      213: -8512305709371979608
+    second: DELLA stay-Sheet_3
+  - first:
+      213: -8309467699668656262
+    second: DELLA stay-Sheet_4
+  - first:
+      213: 7810465515437654863
+    second: DELLA stay-Sheet_5
+  - first:
+      213: -6361999588989439724
+    second: DELLA stay-Sheet_6
+  - first:
+      213: 2579421870216986171
+    second: DELLA stay-Sheet_7
+  - first:
+      213: -3714345406897131541
+    second: DELLA stay-Sheet_8
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DELLA stay-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 4
+        width: 60
+        height: 91
+      alignment: 9
+      pivot: {x: 0.52875084, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aba3333503f880e0800000000000000
+      internalID: -2267295208721634394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA stay-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 4
+        width: 53
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b3301a861a52780800000000000000
+      internalID: -8708376833700971665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA stay-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 4
+        width: 50
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bba9b48b56c0dc0800000000000000
+      internalID: -3671447753996977336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA stay-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 4
+        width: 46
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a88a55be073ed980800000000000000
+      internalID: -8512305709371979608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA stay-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 4
+        width: 47
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fdaa01727deac80800000000000000
+      internalID: -8309467699668656262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA stay-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 4
+        width: 47
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4389123109546c60800000000000000
+      internalID: 7810465515437654863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA stay-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 4
+        width: 50
+        height: 91
+      alignment: 9
+      pivot: {x: 0.48933837, y: 0.49853557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4117a15c413a5b7a0800000000000000
+      internalID: -6361999588989439724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA stay-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 4
+        width: 53
+        height: 91
+      alignment: 9
+      pivot: {x: 0.49793285, y: 0.5029289}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e382c4682fbc320800000000000000
+      internalID: 2579421870216986171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DELLA stay-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 4
+        width: 56
+        height: 91
+      alignment: 9
+      pivot: {x: 0.52768487, y: 0.49770916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befeac8288ef37cc0800000000000000
+      internalID: -3714345406897131541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DELLA stay-Sheet_0: -2267295208721634394
+      DELLA stay-Sheet_1: -8708376833700971665
+      DELLA stay-Sheet_2: -3671447753996977336
+      DELLA stay-Sheet_3: -8512305709371979608
+      DELLA stay-Sheet_4: -8309467699668656262
+      DELLA stay-Sheet_5: 7810465515437654863
+      DELLA stay-Sheet_6: -6361999588989439724
+      DELLA stay-Sheet_7: 2579421870216986171
+      DELLA stay-Sheet_8: -3714345406897131541
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,877 @@
+fileFormatVersion: 2
+guid: 52b8ddd677eecc448bebc81b861d6e28
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5833932638344925756
+    second: r92lSB-Sheet_0
+  - first:
+      213: 4626934707794282294
+    second: r92lSB-Sheet_1
+  - first:
+      213: 3294839443251984676
+    second: r92lSB-Sheet_2
+  - first:
+      213: 5669105512830236972
+    second: r92lSB-Sheet_3
+  - first:
+      213: -3235654663341771262
+    second: r92lSB-Sheet_4
+  - first:
+      213: -2274949294437297292
+    second: r92lSB-Sheet_5
+  - first:
+      213: 5557682242464840794
+    second: r92lSB-Sheet_6
+  - first:
+      213: 354968367435199414
+    second: r92lSB-Sheet_7
+  - first:
+      213: -6777055170969674850
+    second: r92lSB-Sheet_8
+  - first:
+      213: -9067331008797119654
+    second: r92lSB-Sheet_9
+  - first:
+      213: -5453661627744404127
+    second: r92lSB-Sheet_10
+  - first:
+      213: 7258560022110449239
+    second: r92lSB-Sheet_11
+  - first:
+      213: -4266587670878142629
+    second: r92lSB-Sheet_12
+  - first:
+      213: 4616153505764855896
+    second: r92lSB-Sheet_13
+  - first:
+      213: 9179788728702130030
+    second: r92lSB-Sheet_20
+  - first:
+      213: 230813952040984200
+    second: r92lSB-Sheet_21
+  - first:
+      213: 6784090519997101928
+    second: r92lSB-Sheet_22
+  - first:
+      213: 5340954182541377881
+    second: r92lSB-Sheet_23
+  - first:
+      213: -5649218038865361810
+    second: r92lSB-Sheet_26
+  - first:
+      213: -5885734198074222521
+    second: r92lSB-Sheet_34
+  - first:
+      213: 5738418540835077571
+    second: r92lSB-Sheet_37
+  - first:
+      213: 9108760684244584351
+    second: r92lSB-Sheet_38
+  - first:
+      213: -2374838064127594656
+    second: r92lSB-Sheet_39
+  - first:
+      213: 6410351828976659144
+    second: r92lSB-Sheet_40
+  - first:
+      213: 5202475043968423688
+    second: r92lSB-Sheet_41
+  - first:
+      213: 2086764737533626254
+    second: r92lSB-Sheet_42
+  - first:
+      213: 6137940489921887332
+    second: r92lSB-Sheet_46
+  - first:
+      213: 2604162139731900654
+    second: r92lSB-Sheet_49
+  - first:
+      213: 4857464631191003833
+    second: r92lSB-Sheet_61
+  - first:
+      213: 2243849391337288620
+    second: r92lSB-Sheet_62
+  - first:
+      213: -6122734638069187714
+    second: r92lSB-Sheet_63
+  - first:
+      213: 4527746229783306261
+    second: r92lSB-Sheet_66
+  - first:
+      213: -4238758696303712557
+    second: r92lSB-Sheet_68
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: r92lSB-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2070
+        width: 292
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c325b1833da46f050800000000000000
+      internalID: 5833932638344925756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 2070
+        width: 291
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63701092a9c263040800000000000000
+      internalID: 4626934707794282294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 2070
+        width: 291
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429fafe440f99bd20800000000000000
+      internalID: 3294839443251984676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2677
+        y: 2070
+        width: 292
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29747e7d65bcae40800000000000000
+      internalID: 5669105512830236972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 2070
+        width: 292
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2067da71a35a813d0800000000000000
+      internalID: -3235654663341771262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1657
+        width: 292
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4731a0f7ba1cd60e0800000000000000
+      internalID: -2274949294437297292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 1657
+        width: 292
+        height: 335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5cfc9cbd8ad02d40800000000000000
+      internalID: 5557682242464840794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 1657
+        width: 291
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3b97779d91de400800000000000000
+      internalID: 354968367435199414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2684
+        y: 1657
+        width: 291
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bd0277a3013f1a0800000000000000
+      internalID: -6777055170969674850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 1655
+        width: 292
+        height: 339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b63cffc7e5a2280800000000000000
+      internalID: -9067331008797119654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1246
+        width: 292
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dbd11f4a3b054b0800000000000000
+      internalID: -5453661627744404127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1246
+        width: 291
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75eaeb2f1e59bb460800000000000000
+      internalID: 7258560022110449239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 1246
+        width: 291
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f3f326e190ac4c0800000000000000
+      internalID: -4266587670878142629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 1245
+        width: 697
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850d9c3f72fdf0040800000000000000
+      internalID: 4616153505764855896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 1249
+        width: 552
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67dc6f4639256f70800000000000000
+      internalID: 9179788728702130030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 845
+        width: 686
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6483bedf12f991b0800000000000000
+      internalID: -5649218038865361810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 832
+        width: 630
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748da694eeba15ea0800000000000000
+      internalID: -5885734198074222521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 834
+        width: 291
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd7dfa6245f2af40800000000000000
+      internalID: 5738418540835077571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 2677
+        y: 834
+        width: 292
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9741700591d86e70800000000000000
+      internalID: 9108760684244584351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 834
+        width: 292
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f2994fc51ea0fd0800000000000000
+      internalID: -2374838064127594656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 421
+        width: 292
+        height: 376
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8caed63660526f850800000000000000
+      internalID: 6410351828976659144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 421
+        width: 352
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80792941d77e23840800000000000000
+      internalID: 5202475043968423688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 429
+        width: 401
+        height: 342
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87c08ef87da5fc10800000000000000
+      internalID: 2086764737533626254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 423
+        width: 424
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cf74afa585e2550800000000000000
+      internalID: 6137940489921887332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 422
+        width: 411
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8bd3c2ba7d32420800000000000000
+      internalID: 2604162139731900654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 10
+        width: 496
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2e92b985e296340800000000000000
+      internalID: 4857464631191003833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 10
+        width: 470
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3b22c0221c32f10800000000000000
+      internalID: 2243849391337288620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 10
+        width: 502
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bf7eb494da70ba0800000000000000
+      internalID: -6122734638069187714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: r92lSB-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 14
+        width: 511
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510295bf439c5de30800000000000000
+      internalID: 4527746229783306261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      r92lSB-Sheet_0: 5833932638344925756
+      r92lSB-Sheet_1: 4626934707794282294
+      r92lSB-Sheet_10: -5453661627744404127
+      r92lSB-Sheet_11: 7258560022110449239
+      r92lSB-Sheet_12: -4266587670878142629
+      r92lSB-Sheet_13: 4616153505764855896
+      r92lSB-Sheet_2: 3294839443251984676
+      r92lSB-Sheet_20: 9179788728702130030
+      r92lSB-Sheet_26: -5649218038865361810
+      r92lSB-Sheet_3: 5669105512830236972
+      r92lSB-Sheet_34: -5885734198074222521
+      r92lSB-Sheet_37: 5738418540835077571
+      r92lSB-Sheet_38: 9108760684244584351
+      r92lSB-Sheet_39: -2374838064127594656
+      r92lSB-Sheet_4: -3235654663341771262
+      r92lSB-Sheet_40: 6410351828976659144
+      r92lSB-Sheet_41: 5202475043968423688
+      r92lSB-Sheet_42: 2086764737533626254
+      r92lSB-Sheet_46: 6137940489921887332
+      r92lSB-Sheet_49: 2604162139731900654
+      r92lSB-Sheet_5: -2274949294437297292
+      r92lSB-Sheet_6: 5557682242464840794
+      r92lSB-Sheet_61: 4857464631191003833
+      r92lSB-Sheet_62: 2243849391337288620
+      r92lSB-Sheet_63: -6122734638069187714
+      r92lSB-Sheet_66: 4527746229783306261
+      r92lSB-Sheet_7: 354968367435199414
+      r92lSB-Sheet_8: -6777055170969674850
+      r92lSB-Sheet_9: -9067331008797119654
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

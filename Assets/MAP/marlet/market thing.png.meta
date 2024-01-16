@@ -1,0 +1,765 @@
+fileFormatVersion: 2
+guid: 777e4b6badd979b4e95c0ad63cc34afb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 830967177723515996
+    second: market thing_0
+  - first:
+      213: -99644816854954765
+    second: market thing_1
+  - first:
+      213: 1977991396275026327
+    second: market thing_2
+  - first:
+      213: 2913698495583304786
+    second: market thing_3
+  - first:
+      213: 5254906826252115734
+    second: market thing_4
+  - first:
+      213: -107970385843806995
+    second: market thing_5
+  - first:
+      213: -6287166939142434583
+    second: market thing_6
+  - first:
+      213: -6661582271302178830
+    second: market thing_7
+  - first:
+      213: -4486606070760465632
+    second: market thing_8
+  - first:
+      213: -5510355980320497842
+    second: market thing_9
+  - first:
+      213: 7808681102480038462
+    second: market thing_10
+  - first:
+      213: -7083897402028243025
+    second: market thing_11
+  - first:
+      213: -4832453966075071071
+    second: market thing_12
+  - first:
+      213: 1600937021748754282
+    second: market thing_13
+  - first:
+      213: -7961641737113041686
+    second: market thing_14
+  - first:
+      213: 3379200450184382537
+    second: market thing_15
+  - first:
+      213: 6801029526286362176
+    second: market thing_16
+  - first:
+      213: 2929088837473384570
+    second: market thing_17
+  - first:
+      213: 6046327346467595839
+    second: market thing_18
+  - first:
+      213: 6153997803130815565
+    second: market thing_19
+  - first:
+      213: 4421923988214734055
+    second: market thing_20
+  - first:
+      213: 4413569463039075267
+    second: market thing_21
+  - first:
+      213: -1183406312040889107
+    second: market thing_22
+  - first:
+      213: 252440871911702682
+    second: market thing_23
+  - first:
+      213: -6738761601296845094
+    second: market thing_24
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: market thing_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 582
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c541838de30388b00800000000000000
+      internalID: 830967177723515996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 612
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcc6a7219dfd9ef0800000000000000
+      internalID: -99644816854954765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 529
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79970cfe1bc337b10800000000000000
+      internalID: 1977991396275026327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 529
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c35d328598f6820800000000000000
+      internalID: 2913698495583304786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 529
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f5882baed2de840800000000000000
+      internalID: 5254906826252115734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_5
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 256
+        width: 85
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec94819189608ef0800000000000000
+      internalID: -107970385843806995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_6
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 256
+        width: 123
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0d5dccafe7fb8a0800000000000000
+      internalID: -6287166939142434583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_7
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 256
+        width: 85
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f76ef4083e4d83a0800000000000000
+      internalID: -6661582271302178830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_8
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 256
+        width: 123
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b1639bc8f5cb1c0800000000000000
+      internalID: -4486606070760465632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 112
+        width: 85
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f1c075e684783b0800000000000000
+      internalID: -5510355980320497842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 112
+        width: 123
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ad0ad27120e5c60800000000000000
+      internalID: 7808681102480038462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_11
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 112
+        width: 123
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa74bce48d0f0bd90800000000000000
+      internalID: -7083897402028243025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_12
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 113
+        width: 217
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5faa6a8bcafecb0800000000000000
+      internalID: -4832453966075071071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_13
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 88
+        width: 93
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a673b193dbba73610800000000000000
+      internalID: 1600937021748754282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_14
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 23
+        width: 23
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4047ec501928190800000000000000
+      internalID: -7961641737113041686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_15
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 22
+        width: 23
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948841ad7e455ee20800000000000000
+      internalID: 3379200450184382537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_16
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 22
+        width: 23
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046ed3d125c126e50800000000000000
+      internalID: 6801029526286362176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_17
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 24
+        width: 24
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78b92957c636a820800000000000000
+      internalID: 2929088837473384570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 69
+        width: 93
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f366ee1dfaed8e350800000000000000
+      internalID: 6046327346467595839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_19
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 24
+        width: 53
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44852c8564676550800000000000000
+      internalID: 6153997803130815565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 50
+        width: 93
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec515d5074dd5d30800000000000000
+      internalID: 4421923988214734055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_21
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 23
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3a4f3ea06204d30800000000000000
+      internalID: 4413569463039075267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_22
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 22
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de409d9aa32b39fe0800000000000000
+      internalID: -1183406312040889107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_23
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 24
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a904611b2a9d08300800000000000000
+      internalID: 252440871911702682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: market thing_24
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 24
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6b8a0f60c1b72a0800000000000000
+      internalID: -6738761601296845094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      market thing_0: 830967177723515996
+      market thing_1: -99644816854954765
+      market thing_10: 7808681102480038462
+      market thing_11: -7083897402028243025
+      market thing_12: -4832453966075071071
+      market thing_13: 1600937021748754282
+      market thing_14: -7961641737113041686
+      market thing_15: 3379200450184382537
+      market thing_16: 6801029526286362176
+      market thing_17: 2929088837473384570
+      market thing_18: 6046327346467595839
+      market thing_19: 6153997803130815565
+      market thing_2: 1977991396275026327
+      market thing_20: 4421923988214734055
+      market thing_21: 4413569463039075267
+      market thing_22: -1183406312040889107
+      market thing_23: 252440871911702682
+      market thing_24: -6738761601296845094
+      market thing_3: 2913698495583304786
+      market thing_4: 5254906826252115734
+      market thing_5: -107970385843806995
+      market thing_6: -6287166939142434583
+      market thing_7: -6661582271302178830
+      market thing_8: -4486606070760465632
+      market thing_9: -5510355980320497842
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
