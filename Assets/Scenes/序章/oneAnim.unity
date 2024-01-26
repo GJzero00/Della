@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 420783111872275344, guid: 4f4ced9293c35274ba5f3892edea1f22, type: 3}
       propertyPath: m_Name
-      value: "\u8072\u97F3 (2)"
+      value: "\u8072\u97F3 "
       objectReference: {fileID: 0}
     - target: {fileID: 420783111872275345, guid: 4f4ced9293c35274ba5f3892edea1f22, type: 3}
       propertyPath: AudioSource
@@ -349,7 +349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1068997032641753860, guid: 1eebb9c71fb56ff4693de3c5f0b3b6d3, type: 3}
       propertyPath: m_Name
-      value: player (2)
+      value: 'player '
       objectReference: {fileID: 0}
     - target: {fileID: 7572921696417614249, guid: 1eebb9c71fb56ff4693de3c5f0b3b6d3, type: 3}
       propertyPath: m_Size.y
@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 383096280}
   - component: {fileID: 383096279}
   m_Layer: 0
-  m_Name: "\u4E3B\u97F3\u6A02 (2)"
+  m_Name: "\u4E3B\u97F3\u6A02 "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -710,7 +710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2417147497289495699, guid: e220322d051700840900bdd676d44cdf, type: 3}
       propertyPath: m_Name
-      value: ShadowPool (2)
+      value: 'ShadowPool '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -729,7 +729,7 @@ GameObject:
   - component: {fileID: 652853626}
   - component: {fileID: 652853625}
   m_Layer: 0
-  m_Name: EventSystem (2)
+  m_Name: 'EventSystem '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -796,7 +796,7 @@ GameObject:
   - component: {fileID: 798425555}
   - component: {fileID: 798425554}
   m_Layer: 0
-  m_Name: camel-attack(head)_0 (1)
+  m_Name: camelBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -880,7 +880,7 @@ GameObject:
   - component: {fileID: 798857239}
   - component: {fileID: 798857238}
   m_Layer: 0
-  m_Name: tree (2)
+  m_Name: 'tree '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -963,7 +963,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 555054742424935156, guid: 107581265e121304eb4eba18891b0a29, type: 3}
       propertyPath: m_Name
-      value: ground (2)
+      value: 'ground '
       objectReference: {fileID: 0}
     - target: {fileID: 555054742424935158, guid: 107581265e121304eb4eba18891b0a29, type: 3}
       propertyPath: m_RootOrder
@@ -1112,7 +1112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6688835500311316991, guid: fafe7d06a974f10438090ec0995fbe80, type: 3}
       propertyPath: m_Name
-      value: scenes (2)
+      value: 'scenes '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1135,7 +1135,7 @@ GameObject:
   - component: {fileID: 1208258893}
   - component: {fileID: 1208258892}
   m_Layer: 0
-  m_Name: NPC1  stay (1)
+  m_Name: 'NPC1 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1218,7 +1218,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2012991256051990308, guid: 25dbf1d574b40984a80f8bed5e51bd21, type: 3}
       propertyPath: m_Name
-      value: "\u6ED1\u689D\u63A7\u5236 (2)"
+      value: "\u6ED1\u689D\u63A7\u5236 "
       objectReference: {fileID: 0}
     - target: {fileID: 2012991256051990309, guid: 25dbf1d574b40984a80f8bed5e51bd21, type: 3}
       propertyPath: AudioSource
@@ -1301,8 +1301,12 @@ PrefabInstance:
       value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 7594702405422704746, guid: 80143e798b33e4246aeede070ffa274e, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594702405422704746, guid: 80143e798b33e4246aeede070ffa274e, type: 3}
       propertyPath: m_Name
-      value: Main Camera (2)
+      value: 'Main Camera '
       objectReference: {fileID: 0}
     - target: {fileID: 7594702405422704751, guid: 80143e798b33e4246aeede070ffa274e, type: 3}
       propertyPath: m_RootOrder
@@ -1310,7 +1314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7594702405422704751, guid: 80143e798b33e4246aeede070ffa274e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.512777
+      value: -9.255893
       objectReference: {fileID: 0}
     - target: {fileID: 7594702405422704751, guid: 80143e798b33e4246aeede070ffa274e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1468,7 +1472,7 @@ PrefabInstance:
       objectReference: {fileID: 1143782531}
     - target: {fileID: 3665641691632800538, guid: cd18b23c92179ec4db4ba0224e107584, type: 3}
       propertyPath: m_Name
-      value: CM vcam1 (2)
+      value: 'CM vcam1 '
       objectReference: {fileID: 0}
     - target: {fileID: 3665641691632800539, guid: cd18b23c92179ec4db4ba0224e107584, type: 3}
       propertyPath: m_Follow
@@ -1495,7 +1499,7 @@ GameObject:
   - component: {fileID: 1479742937}
   - component: {fileID: 1479742936}
   m_Layer: 0
-  m_Name: wall (2)
+  m_Name: 'Bound_wall '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1776,7 +1780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4597784100319846445, guid: d3f4132d3b2bd1447bab0a44e07a63ca, type: 3}
       propertyPath: m_Name
-      value: Canvas (3)
+      value: 'Canvas '
       objectReference: {fileID: 0}
     - target: {fileID: 4597784100319846445, guid: d3f4132d3b2bd1447bab0a44e07a63ca, type: 3}
       propertyPath: m_IsActive
