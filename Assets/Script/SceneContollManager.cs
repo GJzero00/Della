@@ -12,12 +12,13 @@ public class SceneContollManager : MonoBehaviour
     {
         PresentScene = SceneManager.GetActiveScene().buildIndex;
         NextScence();
-        Debug.Log(Timer);
+        //Debug.Log(Timer);¿À¨d•Œ
     }
 
 
     public void NextScence()
     {
+
         if (UsedCheck == false)
         {
             Timer += Time.deltaTime;
@@ -29,6 +30,10 @@ public class SceneContollManager : MonoBehaviour
             Timer = 0f;
             UsedCheck = true;
         }
+        else
+        {
+            UsedCheck = false;
+        }
 
         
 
@@ -36,7 +41,7 @@ public class SceneContollManager : MonoBehaviour
 
     public void Prologue_Skip() // Prologue Skip Button
     {
-        SceneManager.LoadScene("oneAnim"); 
+        SceneManager.LoadScene("oneAnim");
     }
 
 
