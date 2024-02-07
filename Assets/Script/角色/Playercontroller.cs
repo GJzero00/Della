@@ -18,11 +18,11 @@ public class Playercontroller : MonoBehaviour
     // public int Coin, Key;
 
 
-    public Text CoinNum;
+   
 
     [Header("CDµÄUI½M¼þ")]
     public Image cdImage;
-    public Image cdImage2;
+    //public Image cdImage2;
 
     [Header("Dash…¢”µ")]
     public float dashTime; //dash•réL
@@ -91,7 +91,7 @@ public class Playercontroller : MonoBehaviour
             }
         }
         cdImage.fillAmount -= 1.0f / SkillCoolDown * Time.deltaTime;
-        cdImage2.fillAmount -= 1.0f / SkillCoolDown * Time.deltaTime;
+        //cdImage2.fillAmount -= 1.0f / SkillCoolDown * Time.deltaTime;
     }
 
     /*  private void CheckIfWallSliding()
@@ -213,7 +213,7 @@ public class Playercontroller : MonoBehaviour
 
         lastDash = Time.time;
         cdImage.fillAmount = 1;
-        cdImage2.fillAmount = 1;
+        //cdImage2.fillAmount = 1;
     }
 
     void Dash()

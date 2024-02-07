@@ -41,7 +41,7 @@ public class SceneContollManager : MonoBehaviour
 
     public void Prologue_Skip() // Prologue Skip Button
     {
-        SceneManager.LoadScene("oneAnim");
+        SceneManager.LoadScene(PresentScene+1);
     }
 
 

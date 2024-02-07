@@ -18,6 +18,6 @@ public class PassMarket : MonoBehaviour
     }
     void Next()
     {
-        SceneManager.LoadScene("pass");
+        SceneManager.LoadScene("1-1");
     }
 }

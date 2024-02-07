@@ -79,7 +79,7 @@ public class Enemy_behaviour : MonoBehaviour
 
     void Move()
     {
-        anim.SetBool("canWalk", true);
+        //anim.SetBool("canWalk", true);
 
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("attack"))
         {
