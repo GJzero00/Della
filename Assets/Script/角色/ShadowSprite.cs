@@ -6,22 +6,22 @@ public class ShadowSprite : MonoBehaviour
 {
     private Transform player;
 
-    private SpriteRenderer thisSprite; //當前圖像
-    private SpriteRenderer playerSprite; //玩家圖像
+    private SpriteRenderer thisSprite; 
+    private SpriteRenderer playerSprite; 
 
-    private Color color;// 1是100%
+    private Color color;
 
     [Header("時間控制參數")]
-    public float activeTime; //顯示時間
-    public float activeStart; //開始顯示時間點
+    public float activeTime; 
+    public float activeStart; 
 
     [Header("不透明度控制")]
     private float alpha;
-    public float alphaSet;//初始值
+    public float alphaSet;
     public float alphaMultiplier;     
 
 
-    private  void OnEnable()  //衝刺殘影
+    private  void OnEnable()  
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         thisSprite = GetComponent<SpriteRenderer>();
@@ -42,13 +42,13 @@ public class ShadowSprite : MonoBehaviour
     {
         alpha *= alphaMultiplier;
 
-        color = new Color(0, 0, 1, alpha); //(0,0,1)灰色
+        color = new Color(0, 0, 0, alpha); 
 
         thisSprite.color = color;
 
         if(Time.time >= activeStart + activeTime)
         {
-            //返回對象池
+            
             ShadowPool.instance.ReturnPool(this.gameObject);
         }
     }

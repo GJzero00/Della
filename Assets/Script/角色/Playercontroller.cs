@@ -15,19 +15,19 @@ public class Playercontroller : MonoBehaviour
     public Transform groundCheck;
     public LayerMask ground;
     public LayerMask runcoolground;
-    // public int Coin, Key;
+    
 
 
    
 
-    [Header("CD的UI組件")]
+    [Header("CD Image")]
     public Image cdImage;
     //public Image cdImage2;
 
-    [Header("Dash參數")]
-    public float dashTime; //dash時長
-    private float dashTimeLeft; //衝鋒剩餘時間
-    private float lastDash = -10f;//上一次dash時間點
+    [Header("Dash Controll")]
+    public float dashTime; 
+    private float dashTimeLeft; 
+    private float lastDash = -10f;
     public float dashCoolDown;
     public float dashSpeed;
     public float SkillCoolDown;
@@ -39,7 +39,7 @@ public class Playercontroller : MonoBehaviour
     bool jumpPressed;
     int jumpCount;
 
-    [Header("平台上下")]
+    [Header("SomeThingWithrancool")]
     public float restoreTime;
     private bool isOneWayPlatform;
 
@@ -76,7 +76,7 @@ public class Playercontroller : MonoBehaviour
         {
             if(Time.time >= (lastDash + dashCoolDown) )
             {
-                //可以執行dash
+                
                 ReadyToDash();
             }
            
@@ -86,7 +86,7 @@ public class Playercontroller : MonoBehaviour
         {
             if (Time.time >= (lastDash + SkillCoolDown))
             {
-                //可以執行dash
+                
                 CD();
             }
         }

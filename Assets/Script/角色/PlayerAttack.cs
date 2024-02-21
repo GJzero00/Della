@@ -21,7 +21,7 @@ public class PlayerAttack : MonoBehaviour
     public float SkillCoolDown;
 
     public int playerproperty;
-    public int enemy = Enemy.enemyproperty;
+    
 
     private Animator anim;
     private PolygonCollider2D collider2D;
@@ -31,15 +31,15 @@ public class PlayerAttack : MonoBehaviour
     public bool SwitchS;
     public bool isattackCD;
 
-    public Transform firePoint;//子?位置
-    public GameObject bulletPrefabB;//產生子?
+    public Transform firePoint;
+    public GameObject bulletPrefabB;
     public GameObject bulletPrefabW;
     public float bulletTime;
    
     public GameObject bulletW_B;
     public GameObject bulletW_W;
 
-    private Vector2 enemies;
+    
 
 
     public bool isTouchingWall_R;
@@ -63,7 +63,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        CheckSurroundings();
+        //CheckSurroundings();
         if (Input.GetKeyDown(KeyCode.D))
         {
 
@@ -242,27 +242,34 @@ public class PlayerAttack : MonoBehaviour
         yield return new WaitForSeconds(Qtime);
         boxCollider2D.enabled = false;
     }
-    
+
 
     void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("enemies"))
         {
-            if (other.gameObject.CompareTag("enemies"))
+            Enemy enemy = other.GetComponent<Enemy>();
+            if (enemy != null)
             {
-                other.GetComponent<Enemy>().TakeDamage(damage, playerproperty, enemy);
+                enemy.TakeDamage(damage, playerproperty, enemy.enemyProperty);
                 Vector2 difference = other.transform.position - transform.position;
                 other.transform.position = new Vector2(other.transform.position.x + difference.x, other.transform.position.y + difference.y);
             }
-            if (other.gameObject.CompareTag("Bossenemies"))
+        }
+        else if (other.gameObject.CompareTag("Bossenemies"))
+        {
+            Enemy bossEnemy = other.GetComponent<Enemy>();
+            if (bossEnemy != null)
             {
-                other.GetComponent<Enemy>().TakeDamage(damage, playerproperty, enemy);
-
+                bossEnemy.TakeDamage(damage, playerproperty, bossEnemy.enemyProperty);
             }
         }
-
-         void CheckSurroundings()
-        {
-            isTouchingWall_R = Physics2D.Raycast(wallCheckR.position, transform.right, wallCheckDistance, whatIsGround);
-            isTouchingWall_L = Physics2D.Raycast(wallCheckL.position, transform.right, wallCheckDistance, whatIsGround);
-        }
-
     }
+
+    /*void CheckSurroundings()
+   {
+       isTouchingWall_R = Physics2D.Raycast(wallCheckR.position, transform.right, wallCheckDistance, whatIsGround);
+       isTouchingWall_L = Physics2D.Raycast(wallCheckL.position, transform.right, wallCheckDistance, whatIsGround);
+   }*/
+
+}

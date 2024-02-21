@@ -2,98 +2,71 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine;
+
 public class Enemy : MonoBehaviour
 {
     public int health;
     public int damage;
     public float dieTime;
-
     public GameObject bloodEffect;
-
-    static public int enemyproperty;
-    public int setenemyproperty;
+    public int enemyProperty; // Assuming you set this in the Inspector
 
     private PlayerHealth playerHealth;
     private Animator anim;
-
-    private Color originalColor;
     private SpriteRenderer sr;
+    private Color originalColor;
     public float flashTime;
 
     public void Start()
     {
-        HealthBar.HealthMax = health;
-        HealthBar.HealthCurrent = health;
-
+        HealthBar.UpdateHealthBar(health, health);
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         originalColor = sr.color;
     }
 
-
     public void Update()
-    {
-       if(health < 0)
-        {
-            health = 0;
-           
-        }
-        HealthBar.HealthCurrent = health;
-        if( health == 0)
-        {
-            anim.SetBool("enemyDie", true);
-            Invoke("Killenemy", dieTime);
-        }
-
-    }
-
-    void Killenemy()
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
     }
 
-    public void TakeDamage(int damage, int playerproperty, int enemyproperty)
+    public void TakeDamage(int damage, int playerProperty, int enemyroperty)
     {
-        enemyproperty = setenemyproperty;
-        if (playerproperty == enemyproperty)
-        {
-            health -= 0;
-        }
-        else
+        if (playerProperty != enemyProperty)
         {
             health -= damage;
+            HealthBar.UpdateHealthBar(health, health);
             anim.SetBool("enemyDamage", true);
             Instantiate(bloodEffect, transform.position, Quaternion.identity);
             FlashColor(flashTime);
+            // Add other logic for taking damage, like animation etc.
         }
     }
-    public void NotTakeDamage(int damage)
-    {
-        health -= 0;
-    }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void Die()
     {
-        if (other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.BoxCollider2D")
+        if(GameObject.FindWithTag("Bossenemies") && GameObject.Find("camel"))
         {
-            if (playerHealth != null)
-            {
-                playerHealth.DamegePlayer(damage);
-            }
+            Debug.Log("camel die");
+
         }
+
+        Destroy(gameObject, dieTime);
     }
 
-    void FlashColor(float time)
+
+    private void FlashColor(float time)
     {
-        sr.color = new Color(128,0,0,1);
+        sr.color = new Color(0.5f, 0f, 0f, 1f); // Red
         Invoke("ResetColor", time);
     }
 
-    void ResetColor()
+    private void ResetColor()
     {
         sr.color = originalColor;
     }

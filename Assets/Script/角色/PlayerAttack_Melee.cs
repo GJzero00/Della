@@ -11,7 +11,7 @@ public  class PlayerAttack_Melee : MonoBehaviour
     public float attackCoolDown;
 
     public int playerproperty;//black=0 white=1;
-    public int enemy = Enemy.enemyproperty;
+    
 
     private Animator anim;
     private PolygonCollider2D collider2D;
@@ -19,8 +19,8 @@ public  class PlayerAttack_Melee : MonoBehaviour
     public bool SwitchS;
     public bool isattackCD;
 
-    public Transform firePoint;//子彈位置
-    public GameObject bulletPrefab;//產生子彈
+    public Transform firePoint;//子?位置
+    public GameObject bulletPrefab;//產生子?
 
     private bool checkMelee = false;
     void OnEnable()

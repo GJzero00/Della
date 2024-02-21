@@ -13,7 +13,7 @@ public class BossTrack : Enemy
 
     public void Start()
     {
-        base.Start();
+        
         playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
@@ -21,7 +21,7 @@ public class BossTrack : Enemy
     public void Update()
     {
 
-        base.Update();
+        
         if (playerTransform != null)
         {
             float distance = (transform.position - playerTransform.position).sqrMagnitude;

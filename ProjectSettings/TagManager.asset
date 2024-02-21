@@ -16,6 +16,8 @@ TagManager:
   - PlayerAttack
   - enemy_track
   - Bossenemies
+  - HealthBar
+  - EnemyAttack
   layers:
   - Default
   - TransparentFX

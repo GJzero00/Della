@@ -6,26 +6,48 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     public Text healthText;
-    public static int HealthCurrent;
-    public static int HealthMax;
-
     private Image healthBar;
-
-  
 
     void Start()
     {
-        healthBar = GameObject.FindGameObjectWithTag("enemies").GetComponent<Image>();
+        GameObject bossEnemies = GameObject.FindGameObjectWithTag("Bossenemies");
+        if (bossEnemies != null)
+        {
+            healthBar = bossEnemies.GetComponent<Image>();
+            if (healthBar == null)
+            {
+                Debug.LogError("HealthBar component not found on Bossenemies GameObject!");
+            }
+        }
+        else
+        {
+            Debug.LogError("Bossenemies GameObject not found!");
+        }
     }
 
-
-    void Update()
+    public static void UpdateHealthBar(int currentHealth, int maxHealth)
     {
-        
-        
-            healthBar.fillAmount = (float)HealthCurrent / (float)HealthMax;
-            healthText.text = HealthCurrent.ToString() + "/" + HealthMax.ToString();
-        
+        GameObject healthBarObject = GameObject.FindGameObjectWithTag("HealthBar");
+        if (healthBarObject != null)
+        {
+            HealthBar healthBarComponent = healthBarObject.GetComponent<HealthBar>();
+            if (healthBarComponent != null)
+            {
+                healthBarComponent.UpdateHealthBarInternal(currentHealth, maxHealth);
+            }
+        }
     }
-   
+
+    private void UpdateHealthBarInternal(int currentHealth, int maxHealth)
+    {
+        if (healthBar != null)
+        {
+            healthBar.fillAmount = (float)currentHealth / (float)maxHealth;
+            healthText.text = currentHealth.ToString() + "/" + maxHealth.ToString();
+        }
+        else
+        {
+            Debug.LogError("HealthBar component is not assigned!");
+        }
+    }
 }

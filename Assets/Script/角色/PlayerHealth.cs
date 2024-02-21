@@ -20,12 +20,12 @@ public class PlayerHealth : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         Black();
         White();
     }
-    public void DamegePlayer(int damage)
+    public void DamagePlayer(int damage)
     { 
         health -= damage;
     

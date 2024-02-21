@@ -48,14 +48,13 @@ public class CBoss : MonoBehaviour
     }
 
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.BoxCollider2D")
+        if (other.CompareTag("Player") && other is BoxCollider2D)
         {
-
             if (playerHealth != null)
             {
-                playerHealth.DamegePlayer(damage);
+                playerHealth.DamagePlayer(damage);
             }
         }
     }
