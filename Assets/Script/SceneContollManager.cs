@@ -44,6 +44,14 @@ public class SceneContollManager : MonoBehaviour
         SceneManager.LoadScene(PresentScene+1);
     }
 
+    public void CamelDieChangeScene() //Boss Camel die and change next scene
+    {
+        SceneManager.LoadScene(PresentScene + 1);
+    }
+
+
+
+
 
 
 

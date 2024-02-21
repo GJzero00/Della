@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public Text healthText;
+    
     private Image healthBar;
 
     void Start()
@@ -13,7 +13,9 @@ public class HealthBar : MonoBehaviour
         GameObject bossEnemies = GameObject.FindGameObjectWithTag("Bossenemies");
         if (bossEnemies != null)
         {
-            healthBar = bossEnemies.GetComponent<Image>();
+            //Debug.Log(bossEnemies.name); confirm that I did get GameObject.camel
+            healthBar = bossEnemies.GetComponentInChildren<Image>();
+            Debug.Log(healthBar.name);
             if (healthBar == null)
             {
                 Debug.LogError("HealthBar component not found on Bossenemies GameObject!");
@@ -30,9 +32,12 @@ public class HealthBar : MonoBehaviour
         GameObject healthBarObject = GameObject.FindGameObjectWithTag("HealthBar");
         if (healthBarObject != null)
         {
+            Debug.Log(healthBarObject.name);// check is it HpBar
+            Debug.Log(currentHealth + "," + maxHealth);//check what is in currentHealth and maxHealth
             HealthBar healthBarComponent = healthBarObject.GetComponent<HealthBar>();
             if (healthBarComponent != null)
             {
+                Debug.Log(" Found Component");
                 healthBarComponent.UpdateHealthBarInternal(currentHealth, maxHealth);
             }
         }
@@ -42,8 +47,9 @@ public class HealthBar : MonoBehaviour
     {
         if (healthBar != null)
         {
+            
             healthBar.fillAmount = (float)currentHealth / (float)maxHealth;
-            healthText.text = currentHealth.ToString() + "/" + maxHealth.ToString();
+            
         }
         else
         {

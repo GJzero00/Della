@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using UnityEngine;
+
 
 public class Enemy : MonoBehaviour
 {
     public int health;
+    public int maxHealth;
     public int damage;
     public float dieTime;
     public GameObject bloodEffect;
@@ -17,14 +18,20 @@ public class Enemy : MonoBehaviour
     private SpriteRenderer sr;
     private Color originalColor;
     public float flashTime;
+    private SceneContollManager SceneContoller;
+
+
+
 
     public void Start()
     {
-        HealthBar.UpdateHealthBar(health, health);
+        HealthBar.UpdateHealthBar(health, maxHealth);
+        SceneContoller = GameObject.Find("SceneContoller").GetComponent<SceneContollManager>();
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         originalColor = sr.color;
+        
     }
 
     public void Update()
@@ -35,12 +42,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage, int playerProperty, int enemyroperty)
+    public void TakeDamage(int damage, int playerProperty)
     {
         if (playerProperty != enemyProperty)
         {
             health -= damage;
-            HealthBar.UpdateHealthBar(health, health);
+            HealthBar.UpdateHealthBar(health, maxHealth);
             anim.SetBool("enemyDamage", true);
             Instantiate(bloodEffect, transform.position, Quaternion.identity);
             FlashColor(flashTime);
@@ -50,11 +57,15 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        if(GameObject.FindWithTag("Bossenemies") && GameObject.Find("camel"))
+        if(GameObject.FindWithTag("Bossenemies") )
         {
-            Debug.Log("camel die");
-
+            if (GameObject.Find("camel"))
+            {
+                SceneContoller.CamelDieChangeScene();
+                Debug.Log("camel die");
+            }
         }
+        
 
         Destroy(gameObject, dieTime);
     }

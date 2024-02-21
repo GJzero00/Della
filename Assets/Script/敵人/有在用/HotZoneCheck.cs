@@ -12,11 +12,20 @@ public class HotZoneCheck : MonoBehaviour
     {
         enemyParent = GetComponentInParent<Enemy_behaviour>();
         anim = GetComponentInParent<Animator>();
+
+        if (enemyParent == null)
+        {
+            Debug.LogError("Enemy parent not found!");
+        }
+        if (anim == null)
+        {
+            Debug.LogError("Animator not found!");
+        }
     }
 
     private void Update()
     {
-        if (inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("attack"))
+        if (inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
             enemyParent.Flip();
         }

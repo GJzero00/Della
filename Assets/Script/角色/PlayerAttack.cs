@@ -251,7 +251,7 @@ public class PlayerAttack : MonoBehaviour
             Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.TakeDamage(damage, playerproperty, enemy.enemyProperty);
+                enemy.TakeDamage(damage, playerproperty);
                 Vector2 difference = other.transform.position - transform.position;
                 other.transform.position = new Vector2(other.transform.position.x + difference.x, other.transform.position.y + difference.y);
             }
@@ -261,7 +261,7 @@ public class PlayerAttack : MonoBehaviour
             Enemy bossEnemy = other.GetComponent<Enemy>();
             if (bossEnemy != null)
             {
-                bossEnemy.TakeDamage(damage, playerproperty, bossEnemy.enemyProperty);
+                bossEnemy.TakeDamage(damage, playerproperty);
             }
         }
     }
