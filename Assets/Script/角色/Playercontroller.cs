@@ -42,15 +42,16 @@ public class Playercontroller : MonoBehaviour
     [Header("SomeThingWithrancool")]
     public float restoreTime;
     private bool isOneWayPlatform;
+    private float collDisabledTime=4f;
 
-   /* [Header("wallcheck")]
-    public LayerMask whatIsGround;
-    public Transform wallCheck;
-    public float wallCheckDistance;
-    public bool isTouchingWall;
-    public bool isWallSliding;
-    public float wallSlideSpeed;
-    */
+    /* [Header("wallcheck")]
+     public LayerMask whatIsGround;
+     public Transform wallCheck;
+     public float wallCheckDistance;
+     public bool isTouchingWall;
+     public bool isWallSliding;
+     public float wallSlideSpeed;
+     */
 
 
     void Start()
@@ -224,17 +225,32 @@ public class Playercontroller : MonoBehaviour
             {
                 rb.velocity = new Vector2(dashSpeed * horizontalMove, rb.velocity.y);
 
+                coll.enabled = false;
                 dashTimeLeft -= Time.deltaTime;
+                
 
-                ShadowPool.instance.GetFormPool();
+                //ShadowPool.instance.GetFormPool();
             }
         }
-        if(dashTimeLeft <= 0)
+
+        if (dashTimeLeft <= 0)
         {
             isDashing = false;
+
+            if (collDisabledTime > 0)
+            {
+                collDisabledTime -= Time.deltaTime;
+            }
+            else
+            {
+                coll.enabled = true;
+            }
         }
 
     }
+
+    
+
     void skill()
     {
         if (isSkill)

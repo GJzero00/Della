@@ -2,11 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Greetings from Sid!
-
-//Thank You for watching my tutorials
-//I really hope you find my tutorials helpful and knowledgeable
-//Appreciate your support.
 
 public class Enemy_behaviour : MonoBehaviour
 {
@@ -20,6 +15,7 @@ public class Enemy_behaviour : MonoBehaviour
     [HideInInspector] public bool inRange; //Check if Player is in range
     public GameObject hotZone;
     public GameObject triggerArea;
+    public float enemyAttackCoolDown;
     #endregion
 
     #region Private Variables
@@ -27,7 +23,7 @@ public class Enemy_behaviour : MonoBehaviour
     private float distance; //Store the distance b/w enemy and player
     private bool attackMode;
     private bool cooling; //Check if Enemy is cooling after attack
-    private float intTimer;
+    
     
 
     #endregion
@@ -35,7 +31,7 @@ public class Enemy_behaviour : MonoBehaviour
     void Awake()
     {
         SelectTarget();
-        intTimer = timer; //Store the inital value of timer
+        enemyAttackCoolDown = timer; //Store the inital value of timer
         anim = GetComponent<Animator>();
     }
 
@@ -65,34 +61,35 @@ public class Enemy_behaviour : MonoBehaviour
         {
             StopAttack();
         }
-        else if (attackDistance >= distance && cooling == false)
+        else if (attackDistance >= distance && !cooling )
         {
             Attack();
         }
-
         if (cooling)
         {
-            Cooldown();
-            anim.SetBool("Attack", false);
+            Cooldown(); 
         }
+
+
     }
 
     void Move()
     {
-        //anim.SetBool("canWalk", true);
-
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("attack"))
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("attack") && !cooling)
         {
+            anim.SetBool("canWalk", true);
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
-
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+
         }
     }
 
     void Attack()
     {
-        timer = intTimer; //Reset Timer when Player enter Attack Range
+        timer = enemyAttackCoolDown; //Reset Timer when Player enter Attack Range
         attackMode = true; //To check if Enemy can still attack or not
+
+        StartCooldown();
 
         anim.SetBool("canWalk", false);
         anim.SetBool("Attack", true);
@@ -105,8 +102,13 @@ public class Enemy_behaviour : MonoBehaviour
         if (timer <= 0 && cooling && attackMode)
         {
             cooling = false;
-            timer = intTimer;
+            timer = enemyAttackCoolDown;
+            anim.SetBool("Attack", false); // Stop attack animation
         }
+    }
+    void StartCooldown()
+    {
+        cooling = true;
     }
 
     void StopAttack()
@@ -117,10 +119,7 @@ public class Enemy_behaviour : MonoBehaviour
     }
 
 
-    public void TriggerCooling()
-    {
-        cooling = true;
-    }
+    
 
     private bool InsideOfLimits()
     {

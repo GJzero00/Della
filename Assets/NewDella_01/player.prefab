@@ -108,7 +108,6 @@ GameObject:
   - component: {fileID: 8836936909314232430}
   - component: {fileID: 1502279241279316689}
   - component: {fileID: 7572921696417614249}
-  - component: {fileID: 3383576047528456692}
   - component: {fileID: 942164144}
   - component: {fileID: 1804104315778713256}
   m_Layer: 9
@@ -228,11 +227,9 @@ MonoBehaviour:
   runcoolground:
     serializedVersion: 2
     m_Bits: 4096
-  CoinNum: {fileID: 0}
   cdImage: {fileID: 0}
-  cdImage2: {fileID: 0}
   dashTime: 0.15
-  dashCoolDown: 1
+  dashCoolDown: 1.5
   dashSpeed: 10
   SkillCoolDown: 3
   isGround: 0
@@ -347,19 +344,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.024446964, y: -0.33339685}
   m_Size: {x: 0.15882206, y: 0.22759771}
   m_Direction: 0
---- !u!114 &3383576047528456692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068997032641753860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64abc07fb2aa7484eb48e7624732315f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nowScene: 0
 --- !u!61 &942164144
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -367,7 +351,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068997032641753860}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -510,10 +494,9 @@ MonoBehaviour:
   QstarTime: 0.2
   Wtime: 0.2
   WstarTime: 0.2
-  attackCoolDown: 0.3
+  attackCoolDown: 0.5
   SkillCoolDown: 2
   playerproperty: 0
-  enemy: 0
   SwitchS: 0
   isattackCD: 0
   firePoint: {fileID: 6716572117559659868}
