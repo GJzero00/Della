@@ -89,10 +89,11 @@ public class Enemy_behaviour : MonoBehaviour
         timer = enemyAttackCoolDown; //Reset Timer when Player enter Attack Range
         attackMode = true; //To check if Enemy can still attack or not
 
-        StartCooldown();
+     
 
         anim.SetBool("canWalk", false);
         anim.SetBool("Attack", true);
+        cooling = true;
     }
 
     void Cooldown()
@@ -106,10 +107,7 @@ public class Enemy_behaviour : MonoBehaviour
             anim.SetBool("Attack", false); // Stop attack animation
         }
     }
-    void StartCooldown()
-    {
-        cooling = true;
-    }
+    
 
     void StopAttack()
     {

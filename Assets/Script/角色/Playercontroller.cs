@@ -32,6 +32,7 @@ public class Playercontroller : MonoBehaviour
     public float dashSpeed;
     public float SkillCoolDown;
     private float SkillTimeLeft;
+    public float collDisabledTime;
 
 
     public bool isGround, isJump, isDashing,isSkill;
@@ -42,7 +43,7 @@ public class Playercontroller : MonoBehaviour
     [Header("SomeThingWithrancool")]
     public float restoreTime;
     private bool isOneWayPlatform;
-    private float collDisabledTime=4f;
+    
 
     /* [Header("wallcheck")]
      public LayerMask whatIsGround;
@@ -196,16 +197,7 @@ public class Playercontroller : MonoBehaviour
         }
     }
 
-   void ReadyToDash()
-    {
-        isDashing = true;
-
-        dashTimeLeft = dashTime;
-
-        lastDash = Time.time;
-       
-
-    }
+   
     void CD()
     {
         isSkill = true;
@@ -221,35 +213,46 @@ public class Playercontroller : MonoBehaviour
     {
         if (isDashing)
         {
-            if(dashTimeLeft > 0)
+            if (dashTimeLeft > 0)
             {
-                rb.velocity = new Vector2(dashSpeed * horizontalMove, rb.velocity.y);
-
-                coll.enabled = false;
-                dashTimeLeft -= Time.deltaTime;
                 
-
-                //ShadowPool.instance.GetFormPool();
-            }
-        }
-
-        if (dashTimeLeft <= 0)
-        {
-            isDashing = false;
-
-            if (collDisabledTime > 0)
-            {
-                collDisabledTime -= Time.deltaTime;
+                rb.velocity = new Vector2(dashSpeed * horizontalMove, rb.velocity.y);
+                dashTimeLeft -= Time.deltaTime;
             }
             else
             {
-                coll.enabled = true;
+                
+                isDashing = false;
+                coll.enabled = true; // 重新啟用碰撞體
             }
         }
-
+        else
+        {
+            // 如果 Dash 未激活，檢查冷卻時間
+            if (Time.time >= (lastDash + dashCoolDown))
+            {
+                if (Input.GetKeyDown(KeyCode.LeftShift))
+                {
+                    ReadyToDash();
+                }
+            }
+        }
     }
 
-    
+    void ReadyToDash()
+    {
+        // 確定是否可以 Dash，如果是，設置 Dash 的相關變數
+        if (Time.time >= (lastDash + dashCoolDown))
+        {
+            isDashing = true;
+            dashTimeLeft = dashTime;
+            lastDash = Time.time;
+            coll.enabled = false; // 關閉碰撞體
+            
+        }
+    }
+
+
 
     void skill()
     {
