@@ -26,9 +26,11 @@ public class TORunCool : MonoBehaviour
    
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("done!");
         if (fire1.activeSelf && fire3.activeSelf&& fire4.activeSelf && !fire2.activeSelf && !fire5.activeSelf) 
         {
-        SceneManager.LoadScene("run cool");
+        SceneManager.LoadScene(15);
+            Debug.Log("done!");
         }
     
     }

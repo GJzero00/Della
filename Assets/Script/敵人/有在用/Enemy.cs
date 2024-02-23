@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
 {
     Enemy_behaviour enemy_Behaviour;
     public int health;
-    public int maxHealth;
+    private int maxHealth;
     public int damage;
     public float dieTime;
     public GameObject bloodEffect;
@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
 
     public void Start()
     {
-
+        maxHealth = health;
         HealthBar.UpdateHealthBar(health, maxHealth);
         SceneContoller = GameObject.Find("SceneContoller").GetComponent<SceneContollManager>();
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
