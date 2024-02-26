@@ -32,7 +32,6 @@ public class Enemy : MonoBehaviour
         HealthBar.UpdateHealthBar(health, maxHealth);
         SceneContoller = GameObject.Find("SceneContoller").GetComponent<SceneContollManager>();
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
-        anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         originalColor = sr.color;
         
@@ -44,6 +43,11 @@ public class Enemy : MonoBehaviour
         {
             Die();
         }
+
+        if (sr == null)
+        {
+            Debug.LogWarning("SpriteRenderer component not found!");
+        }
     }
 
     public void TakeDamage(int damage, int playerProperty)
@@ -52,7 +56,7 @@ public class Enemy : MonoBehaviour
         {
             health -= damage;
             HealthBar.UpdateHealthBar(health, maxHealth);
-            anim.SetBool("enemyDamage", true);
+            //anim.SetBool("enemyDamage", true);
             Instantiate(bloodEffect, transform.position, Quaternion.identity);
             FlashColor(flashTime);
             // Add other logic for taking damage, like animation etc.

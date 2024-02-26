@@ -35,8 +35,12 @@ public class OppenTrigger : MonoBehaviour
     }
     private void Ischeck()
     {
-        Destroy(box_locked);
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Destroy(box_locked);
+
+            box.SetActive(true);
+        }
         
-        box.SetActive(true);
     }
 }

@@ -7,14 +7,21 @@ public class HealthBar : MonoBehaviour
 {
     
     private Image healthBar;
+    private GameObject enemiesTemp;
 
     void Start()
     {
+        
         GameObject bossEnemies = GameObject.FindGameObjectWithTag("Bossenemies");
-        if (bossEnemies != null)
+        GameObject Enemies = GameObject.FindGameObjectWithTag("enemies");
+
+        if(bossEnemies == null) { enemiesTemp = Enemies; }
+        else if (Enemies == null) { enemiesTemp = bossEnemies; }
+
+        if (enemiesTemp != null)
         {
             //Debug.Log(bossEnemies.name); confirm that I did get GameObject.camel
-            healthBar = bossEnemies.GetComponentInChildren<Image>();
+            healthBar = enemiesTemp.GetComponentInChildren<Image>();
             Debug.Log(healthBar.name);
             if (healthBar == null)
             {

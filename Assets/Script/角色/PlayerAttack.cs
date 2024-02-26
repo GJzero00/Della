@@ -253,7 +253,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 enemy.TakeDamage(damage, playerproperty);
                 Vector2 difference = other.transform.position - transform.position;
-                other.transform.position = new Vector2(other.transform.position.x + difference.x, other.transform.position.y + difference.y);
+                other.transform.position = new Vector2(other.transform.position.x + difference.x, other.transform.position.y );
             }
         }
         else if (other.gameObject.CompareTag("Bossenemies"))
