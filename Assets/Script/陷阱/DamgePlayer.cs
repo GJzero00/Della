@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class heart : MonoBehaviour
+public class DamgePlayer : MonoBehaviour
 {
    public int damage;
 

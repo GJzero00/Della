@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class PlayerAttack : MonoBehaviour
 {
 
-    public int damage;
+    
     public float meleetime;
     public float meleestarTime;
     public float Qtime;
@@ -244,27 +244,7 @@ public class PlayerAttack : MonoBehaviour
     }
 
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("enemies"))
-        {
-            Enemy enemy = other.GetComponent<Enemy>();
-            if (enemy != null)
-            {
-                enemy.TakeDamage(damage, playerproperty);
-                Vector2 difference = other.transform.position - transform.position;
-                other.transform.position = new Vector2(other.transform.position.x + difference.x, other.transform.position.y );
-            }
-        }
-        else if (other.gameObject.CompareTag("Bossenemies"))
-        {
-            Enemy bossEnemy = other.GetComponent<Enemy>();
-            if (bossEnemy != null)
-            {
-                bossEnemy.TakeDamage(damage, playerproperty);
-            }
-        }
-    }
+ 
 
     /*void CheckSurroundings()
    {

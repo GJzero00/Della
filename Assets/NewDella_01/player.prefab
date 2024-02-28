@@ -108,7 +108,6 @@ GameObject:
   - component: {fileID: 8836936909314232430}
   - component: {fileID: 1502279241279316689}
   - component: {fileID: 7572921696417614249}
-  - component: {fileID: 942164144}
   - component: {fileID: 1804104315778713256}
   m_Layer: 9
   m_Name: player
@@ -228,6 +227,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4096
   cdImage: {fileID: 0}
+  cdImage2: {fileID: 0}
   dashTime: 0.15
   dashCoolDown: 1.5
   dashSpeed: 10
@@ -345,51 +345,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.024446964, y: -0.33339685}
   m_Size: {x: 0.15882206, y: 0.22759771}
   m_Direction: 0
---- !u!61 &942164144
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068997032641753860}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.029070258, y: -0.14469579}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.14, y: 1.01}
-    newSize: {x: 1.14, y: 1.01}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15160918, y: 0.39498192}
-  m_EdgeRadius: 0
 --- !u!95 &1804104315778713256
 Animator:
   serializedVersion: 5
@@ -488,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d83d16f516b4b342a5f5cc236109bc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 100
   meleetime: 0.2
   meleestarTime: 0.2
   Qtime: 0.2
@@ -511,9 +466,6 @@ MonoBehaviour:
   wallCheckDistance: 0.4
   wallCheckR: {fileID: 826693480}
   wallCheckL: {fileID: 442726673}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 32768
 --- !u!60 &5673658091357253530
 PolygonCollider2D:
   m_ObjectHideFlags: 0
