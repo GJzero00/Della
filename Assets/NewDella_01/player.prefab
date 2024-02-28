@@ -232,6 +232,7 @@ MonoBehaviour:
   dashCoolDown: 1.5
   dashSpeed: 10
   SkillCoolDown: 3
+  collDisabledTime: 0
   isGround: 0
   isJump: 0
   isDashing: 0

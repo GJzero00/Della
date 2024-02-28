@@ -8,7 +8,7 @@ public class OppenTrigger : MonoBehaviour
     public GameObject box;
 
     private Animator anim;
-    private int time = 1;
+    public float lockTime ;
 
 
     public bool check;
@@ -21,7 +21,7 @@ public class OppenTrigger : MonoBehaviour
 
     void Update()
     {
-        Invoke("Ischeck", time);
+        Invoke("Ischeck", lockTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

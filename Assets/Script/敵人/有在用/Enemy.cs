@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     Enemy_behaviour enemy_Behaviour;
     public int health;
     private int maxHealth;
-    public int damage;
+    
     public float dieTime;
     public GameObject bloodEffect;
     public int enemyProperty; // Assuming you set this in the Inspector

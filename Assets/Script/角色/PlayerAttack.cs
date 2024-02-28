@@ -47,7 +47,7 @@ public class PlayerAttack : MonoBehaviour
     public float wallCheckDistance;
     public Transform wallCheckR;
     public Transform wallCheckL;
-    public LayerMask whatIsGround;
+    
 
     void OnEnable()
     {

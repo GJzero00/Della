@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class heart : MonoBehaviour
 {
-    private int damage = 1;
+   public int damage;
 
     private PlayerHealth playerHealth;
     void Start()
