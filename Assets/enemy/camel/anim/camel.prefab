@@ -683,8 +683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17cf463f8a27e00409dbee77fad3d7da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
-  damage: 1
+  health: 100
   dieTime: 0
   bloodEffect: {fileID: 5930424604688638662, guid: 86f24a053300e2341a3d19dcc89988bb, type: 3}
   enemyProperty: 0
@@ -779,6 +778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf69483b518c804590390043ce6cc6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
 --- !u!1 &7043589223519519316
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,7 +879,6 @@ GameObject:
   - component: {fileID: 7043589224744720516}
   - component: {fileID: 7043589224744720507}
   - component: {fileID: 7043589224744720506}
-  - component: {fileID: 6999918957675317852}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: HealthBar
@@ -970,18 +969,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6999918957675317852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7043589224744720505}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bc8ceda08aa32544a027ef279bbf162, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8698649649393885089
 GameObject:
   m_ObjectHideFlags: 0

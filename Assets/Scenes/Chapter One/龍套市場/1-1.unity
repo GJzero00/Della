@@ -1073,17 +1073,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1068997032641753860, guid: 1eebb9c71fb56ff4693de3c5f0b3b6d3, type: 3}
   m_PrefabInstance: {fileID: 527904196}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &527904199 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3383576047528456692, guid: 1eebb9c71fb56ff4693de3c5f0b3b6d3, type: 3}
-  m_PrefabInstance: {fileID: 527904196}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527904198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64abc07fb2aa7484eb48e7624732315f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &581289656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,6 +1207,7 @@ MonoBehaviour:
   inRange: 0
   hotZone: {fileID: 0}
   triggerArea: {fileID: 0}
+  enemyAttackCoolDown: 0
 --- !u!95 &618181600
 Animator:
   serializedVersion: 5
@@ -1685,6 +1675,7 @@ MonoBehaviour:
   inRange: 0
   hotZone: {fileID: 0}
   triggerArea: {fileID: 0}
+  enemyAttackCoolDown: 0
 --- !u!95 &705437505
 Animator:
   serializedVersion: 5
@@ -2333,6 +2324,7 @@ MonoBehaviour:
   inRange: 0
   hotZone: {fileID: 0}
   triggerArea: {fileID: 0}
+  enemyAttackCoolDown: 0
 --- !u!95 &1049255486
 Animator:
   serializedVersion: 5
@@ -2689,7 +2681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7594702405422704751, guid: 80143e798b33e4246aeede070ffa274e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.512941
+      value: -9.512777
       objectReference: {fileID: 0}
     - target: {fileID: 7594702405422704751, guid: 80143e798b33e4246aeede070ffa274e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3931,7 +3923,7 @@ PrefabInstance:
     - target: {fileID: 4597784098439439115, guid: d3f4132d3b2bd1447bab0a44e07a63ca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 527904199}
+      objectReference: {fileID: 0}
     - target: {fileID: 4597784099532846742, guid: d3f4132d3b2bd1447bab0a44e07a63ca, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4026,9 +4018,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6575935323861393141, guid: d3f4132d3b2bd1447bab0a44e07a63ca, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7425009192394067671, guid: d3f4132d3b2bd1447bab0a44e07a63ca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7512404933049733055, guid: d3f4132d3b2bd1447bab0a44e07a63ca, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

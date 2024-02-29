@@ -30,9 +30,9 @@ public class Enemy : MonoBehaviour
     {
         maxHealth = health;
         HealthBar.UpdateHealthBar(health, maxHealth);
+        sr = GetComponent<SpriteRenderer>();
         SceneContoller = GameObject.Find("SceneContoller").GetComponent<SceneContollManager>();
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
-        sr = GetComponent<SpriteRenderer>();
         originalColor = sr.color;
         
     }
@@ -56,10 +56,10 @@ public class Enemy : MonoBehaviour
         {
             health -= damage;
             HealthBar.UpdateHealthBar(health, maxHealth);
-            //anim.SetBool("enemyDamage", true);
+            
             Instantiate(bloodEffect, transform.position, Quaternion.identity);
             FlashColor(flashTime);
-            // Add other logic for taking damage, like animation etc.
+            
         }
     }
 
@@ -72,6 +72,19 @@ public class Enemy : MonoBehaviour
                 SceneContoller.CamelDieChangeScene();
                 Debug.Log("camel die");
             }
+
+            if (GameObject.Find("God"))
+            {
+                SceneContoller.GodDieChangeScene();
+                Debug.Log("God die");
+            }
+
+            if (GameObject.Find("final BOSS"))
+            {
+                SceneContoller.FinalBossDieChangeScene();
+                Debug.Log("final BOSS die");
+            }
+
         }
         
 

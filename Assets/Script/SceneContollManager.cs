@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -49,15 +50,13 @@ public class SceneContollManager : MonoBehaviour
         SceneManager.LoadScene(PresentScene + 1);
     }
 
+    public void GodDieChangeScene()
+    {
+        SceneManager.LoadScene(PresentScene + 1);
+    }
 
-
-
-
-
-
-
-
-
-
-
+    internal void FinalBossDieChangeScene()
+    {
+        SceneManager.LoadScene(PresentScene + 1);
+    }
 }

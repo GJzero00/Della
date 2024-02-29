@@ -9,19 +9,21 @@ using UnityEngine.UI;
 public class PlayerAttack : MonoBehaviour
 {
 
-    
-    public float meleetime;
-    public float meleestarTime;
+
+   
+
+
     public float Qtime;
     public float QstarTime;
     public float Wtime;
     public float WstarTime;
     private float lastAttack = -10f;
     public float attackCoolDown;
-    public float SkillCoolDown;
+    public float SkillCoolDownQ;
+    public float SkillCoolDownW;
 
     public int playerproperty;
-    
+
 
     private Animator anim;
     private PolygonCollider2D collider2D;
@@ -35,11 +37,11 @@ public class PlayerAttack : MonoBehaviour
     public GameObject bulletPrefabB;
     public GameObject bulletPrefabW;
     public float bulletTime;
-   
+
     public GameObject bulletW_B;
     public GameObject bulletW_W;
-
-    
+    private float lastSkillQTime = -10f; 
+    private float lastSkillWTime = -10f; // remember the time skill been used
 
 
     public bool isTouchingWall_R;
@@ -47,18 +49,16 @@ public class PlayerAttack : MonoBehaviour
     public float wallCheckDistance;
     public Transform wallCheckR;
     public Transform wallCheckL;
-    
+
 
     void OnEnable()
     {
         anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         collider2D = GetComponent<PolygonCollider2D>();
         boxCollider2D = GetComponent<BoxCollider2D>();
-       
 
-        meleestarTime = Time.time;
-        QstarTime = Time.time;
-        WstarTime = Time.time;
+
+       
     }
 
     void Update()
@@ -69,36 +69,26 @@ public class PlayerAttack : MonoBehaviour
 
             if (Time.time >= (lastAttack + attackCoolDown))
             {
-
-                if (isTouchingWall_R || isTouchingWall_L)
-                {
-
-                    Melee();
-                }
-
-                else
-                {
-                    attackB();
-                    attackW();
-
-                }
+                attackB();
+                attackW();
             }
-            NOattack();
+            NoAttack();
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (Time.time >= (lastAttack + SkillCoolDown))
+            if (Time.time >= (lastSkillQTime + SkillCoolDownQ))
             {
                 Skill_Q();
+                lastSkillQTime = Time.time;
             }
-             NOattack();
+            NoAttack();
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
-            if (Time.time >= (lastAttack + SkillCoolDown))
+            if (Time.time >= (lastSkillWTime + SkillCoolDownW))
             {
-                if (SwitchS == false) 
+                if (SwitchS == false)
                 {
                     Skill_W_B();
                 }
@@ -106,100 +96,97 @@ public class PlayerAttack : MonoBehaviour
                 {
                     Skill_W_W();
                 }
-                NOattack();
+
+                lastSkillWTime = Time.time;
+                NoAttack();
             }
-           
+
         }
 
         if (Input.GetKeyDown(KeyCode.S))
         {
-
-            if (SwitchS)
-            {
-                Black();
-
-            }
-            else
-            {
-                White();
-            }
+            ChangePlayerProperty();
         }
 
     }
-        void White()
+    void ChangePlayerProperty()
+    {
+        if (SwitchS)
         {
-            playerproperty = 1;
-            SwitchS = true;
-            anim.SetTrigger("S");
-            anim.SetBool("W", true);
-            anim.SetBool("B", false);
-        }
-
-        void Black()
-        {
-            playerproperty = 0;
-            SwitchS = false;
-            anim.SetTrigger("S");
-            anim.SetBool("B", true);
-            anim.SetBool("W", false);
-        }
-
-        void attackB()
-        {
-            if (playerproperty == 0)
-            {
-                Instantiate(bulletPrefabB, firePoint.position, firePoint.rotation);
-            }
-            isattackCD = true;
-            lastAttack = Time.time;
-            anim.SetTrigger("AttackB");
+            Black();
 
         }
-        void attackW()
+        else
         {
-            if (playerproperty == 1)
-            {
-                Instantiate(bulletPrefabW, firePoint.position, firePoint.rotation);
-            }
-            isattackCD = true;
-            lastAttack = Time.time;
-            anim.SetTrigger("AttackW");
+            White();
         }
+    }
+    void White()
+    {
+        playerproperty = 1;
+        SwitchS = true;
+        anim.SetTrigger("S");
+        anim.SetBool("W", true);
+        anim.SetBool("B", false);
+    }
 
-        void Melee()
-        {
-            isattackCD = true;
-            lastAttack = Time.time;
-            meleestarTime = meleetime;
-            anim.SetTrigger("melee");
-            anim.SetBool("melee", true);
-            StartCoroutine(StarAttack());
-        }
-        void NOattack()
-        {
-            anim.SetBool("idle", true);
-            anim.SetTrigger("idle");
-        }
+    void Black()
+    {
+        playerproperty = 0;
+        SwitchS = false;
+        anim.SetTrigger("S");
+        anim.SetBool("B", true);
+        anim.SetBool("W", false);
+    }
 
-        void Skill_Q()
+    void attackB()
+    {
+        if (playerproperty == 0)
         {
-            isattackCD = true;
-            lastAttack = Time.time;
-            QstarTime = Qtime;
-            anim.SetBool("SkillQ",true);
-            anim.SetTrigger("Skill_Q");
+            Instantiate(bulletPrefabB, firePoint.position, firePoint.rotation);
+        }
+        isattackCD = true;
+        lastAttack = Time.time;
+        anim.SetTrigger("AttackB");
+
+    }
+    void attackW()
+    {
+        if (playerproperty == 1)
+        {
+            Instantiate(bulletPrefabW, firePoint.position, firePoint.rotation);
+        }
+        isattackCD = true;
+        lastAttack = Time.time;
+        anim.SetTrigger("AttackW");
+    }
+
+    
+    void NoAttack()
+    {
+        anim.SetBool("idle", true);
+        anim.SetTrigger("idle");
+    }
+
+    void Skill_Q()
+    {
+        isattackCD = true;
+        lastAttack = Time.time;
+        QstarTime = Qtime;
+        anim.SetBool("SkillQ", true);
+        anim.SetTrigger("Skill_Q");
         StartCoroutine(StarSkillQ());
-        }
+    }
 
-       void Skill_W_B()
-       {
+    void Skill_W_B()
+    {
         isattackCD = true;
         lastAttack = Time.time;
         WstarTime = Wtime;
         anim.SetBool("SkillW", true);
         anim.SetTrigger("Skill_W");
         Invoke("W_BTime", bulletTime);
-       }
+    }
     void W_BTime()
     {
         Instantiate(bulletW_B, firePoint.position, firePoint.rotation);
@@ -217,19 +204,10 @@ public class PlayerAttack : MonoBehaviour
     {
         Instantiate(bulletW_W, firePoint.position, firePoint.rotation);
     }
-    IEnumerator StarAttack()
-        {
-            yield return new WaitForSeconds(meleestarTime);
-            collider2D.enabled = true;
-            StartCoroutine(disableHitBox());
-        }
+    
 
 
-        IEnumerator disableHitBox()
-        {
-            yield return new WaitForSeconds(meleetime);
-            collider2D.enabled = false;
-        }
+    
 
     IEnumerator StarSkillQ()
     {
@@ -244,12 +222,8 @@ public class PlayerAttack : MonoBehaviour
     }
 
 
- 
 
-    /*void CheckSurroundings()
-   {
-       isTouchingWall_R = Physics2D.Raycast(wallCheckR.position, transform.right, wallCheckDistance, whatIsGround);
-       isTouchingWall_L = Physics2D.Raycast(wallCheckL.position, transform.right, wallCheckDistance, whatIsGround);
-   }*/
+
+    
 
 }

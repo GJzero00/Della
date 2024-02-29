@@ -15,12 +15,19 @@ public class HealthBar : MonoBehaviour
         GameObject bossEnemies = GameObject.FindGameObjectWithTag("Bossenemies");
         GameObject Enemies = GameObject.FindGameObjectWithTag("enemies");
 
-        if(bossEnemies == null) { enemiesTemp = Enemies; }
-        else if (Enemies == null) { enemiesTemp = bossEnemies; }
+        if (bossEnemies != null)
+        {
+            enemiesTemp = bossEnemies;
+            Debug.Log("bossEnemies Enemies ");
+        }
+        else if (Enemies != null)
+        {
+            enemiesTemp = Enemies;
+            Debug.Log("Find Enemies ");
+        }
 
         if (enemiesTemp != null)
         {
-            //Debug.Log(bossEnemies.name); confirm that I did get GameObject.camel
             healthBar = enemiesTemp.GetComponentInChildren<Image>();
             Debug.Log(healthBar.name);
             if (healthBar == null)

@@ -20,6 +20,6 @@ public class returnBack : MonoBehaviour
     }
     void backtofront()
     {
-        SceneManager.LoadScene("Dungeon_B3F");
+        SceneManager.LoadScene("B3_left_room");
     }
 }

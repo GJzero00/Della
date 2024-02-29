@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy_behaviour : MonoBehaviour
 {
-    #region Public Variables
+    
     public float attackDistance; //Minimum distance for attack
     public float moveSpeed;
     public float timer; //Timer for cooldown between attacks
@@ -16,9 +16,9 @@ public class Enemy_behaviour : MonoBehaviour
     public GameObject hotZone;
     public GameObject triggerArea;
     public float enemyAttackCoolDown;
-    #endregion
+    
 
-    #region Private Variables
+    
     private Animator anim;
     private float distance; //Store the distance b/w enemy and player
     private bool attackMode;
@@ -26,7 +26,7 @@ public class Enemy_behaviour : MonoBehaviour
     
     
 
-    #endregion
+    
 
     void Awake()
     {

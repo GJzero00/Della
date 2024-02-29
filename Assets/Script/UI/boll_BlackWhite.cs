@@ -15,12 +15,7 @@ public class boll_BlackWhite : MonoBehaviour
     public bool active = false;
 
  
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+   
     void Update()
     {
             if (Input.GetKeyDown(KeyCode.S) && active == false)

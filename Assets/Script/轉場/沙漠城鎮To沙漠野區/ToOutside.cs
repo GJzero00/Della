@@ -17,6 +17,6 @@ public class ToOutside : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene("outside_ desert_1");
+        SceneManager.LoadScene("GOD");
     }
 }

@@ -20,9 +20,7 @@ public class Playercontroller : MonoBehaviour
 
    
 
-    [Header("CD Image")]
-    public Image cdImage;
-    public Image cdImage2;
+    
 
     [Header("Dash Controll")]
     public float dashTime; 
@@ -92,8 +90,7 @@ public class Playercontroller : MonoBehaviour
                 CD();
             }
         }
-        cdImage.fillAmount -= 1.0f / SkillCoolDown * Time.deltaTime;
-        cdImage2.fillAmount -= 1.0f / SkillCoolDown * Time.deltaTime;
+        
     }
 
     /*  private void CheckIfWallSliding()
@@ -205,8 +202,7 @@ public class Playercontroller : MonoBehaviour
         SkillTimeLeft = dashTime;
 
         lastDash = Time.time;
-        cdImage.fillAmount = 1;
-        cdImage2.fillAmount = 1;
+        
     }
 
     void Dash()

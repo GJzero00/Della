@@ -30,7 +30,7 @@ public class Rebirth : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.CapsuleCollider2D")
+        if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("one");
             inRange = true;
@@ -38,7 +38,7 @@ public class Rebirth : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.CapsuleCollider2D")
+        if (other.gameObject.CompareTag("Player") )
         {
             Debug.Log("two");
             inRange = false;
