@@ -11,10 +11,7 @@ public class ControlFire :MonoBehaviour
     public GameObject fire1;
     public GameObject fire2;
     public GameObject fire3;
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()

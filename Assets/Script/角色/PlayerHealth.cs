@@ -7,24 +7,18 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     public float dieTime;
 
-    private Rigidbody2D rb;
+    
     private Animator anim;
     private Playercontroller playercontroller;
-    private float speed;
+    
 
     public void Start()
     {
         anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
         playercontroller = GameObject.FindGameObjectWithTag("Player").GetComponent<Playercontroller>();
     }
 
-    // Update is called once per frame
-    public void Update()
-    {
-        Black();
-        White();
-    }
+   
     public void DamagePlayer(int damage)
     { 
         health -= damage;
@@ -46,18 +40,5 @@ public class PlayerHealth : MonoBehaviour
         playercontroller.enabled = false;
     }
    
-   void Black()
-    {
-        anim.SetBool("Bdle", true);
-        anim.SetBool("Wdle", false);
-
-
-    }
-   void White()
-    {
-        anim.SetBool("Wdle", true);
-        anim.SetBool("Bdle", false);
-
-
-    }
+   
 }

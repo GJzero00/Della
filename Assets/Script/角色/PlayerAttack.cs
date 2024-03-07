@@ -8,15 +8,8 @@ using UnityEngine.UI;
 
 public class PlayerAttack : MonoBehaviour
 {
-
-
-   
-
-
     public float Qtime;
     public float QstarTime;
-    public float Wtime;
-    public float WstarTime;
     private float lastAttack = -10f;
     public float attackCoolDown;
     public float SkillCoolDownQ;
@@ -63,7 +56,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        //CheckSurroundings();
+        
         if (Input.GetKeyDown(KeyCode.D))
         {
 
@@ -171,8 +164,6 @@ public class PlayerAttack : MonoBehaviour
     void Skill_Q()
     {
         isattackCD = true;
-        lastAttack = Time.time;
-        QstarTime = Qtime;
         anim.SetBool("SkillQ", true);
         anim.SetTrigger("Skill_Q");
         StartCoroutine(StarSkillQ());
@@ -181,8 +172,6 @@ public class PlayerAttack : MonoBehaviour
     void Skill_W_B()
     {
         isattackCD = true;
-        lastAttack = Time.time;
-        WstarTime = Wtime;
         anim.SetBool("SkillW", true);
         anim.SetTrigger("Skill_W");
         Invoke("W_BTime", bulletTime);
@@ -194,8 +183,6 @@ public class PlayerAttack : MonoBehaviour
     void Skill_W_W()
     {
         isattackCD = true;
-        lastAttack = Time.time;
-        WstarTime = Wtime;
         anim.SetBool("SkillW", true);
         anim.SetTrigger("Skill_W");
         Invoke("W_WTime", bulletTime);
@@ -211,7 +198,7 @@ public class PlayerAttack : MonoBehaviour
 
     IEnumerator StarSkillQ()
     {
-        yield return new WaitForSeconds(QstarTime);
+        yield return new WaitForSeconds(Qtime);
         boxCollider2D.enabled = true;
         StartCoroutine(disableQ());
     }

@@ -6,18 +6,17 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    Enemy_behaviour enemy_Behaviour;
+    
     public int health;
     private int maxHealth;
     
     public float dieTime;
     public GameObject bloodEffect;
-    public int enemyProperty; // Assuming you set this in the Inspector
+    public int enemyProperty; 
     
 
 
     private PlayerHealth playerHealth;
-    private Animator anim;
     private SpriteRenderer sr;
     private Color originalColor;
     public float flashTime;
@@ -29,10 +28,10 @@ public class Enemy : MonoBehaviour
     public void Start()
     {
         maxHealth = health;
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         HealthBar.UpdateHealthBar(health, maxHealth);
         sr = GetComponent<SpriteRenderer>();
         SceneContoller = GameObject.Find("SceneContoller").GetComponent<SceneContollManager>();
-        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         originalColor = sr.color;
         
     }

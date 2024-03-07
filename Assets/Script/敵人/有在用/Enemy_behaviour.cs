@@ -138,10 +138,9 @@ public class Enemy_behaviour : MonoBehaviour
             target = rightLimit;
         }
 
-        //Ternary Operator
-        //target = distanceToLeft > distanceToRight ? leftLimit : rightLimit;
+        
 
-        Flip();
+        
     }
 
     public void Flip()
@@ -157,8 +156,8 @@ public class Enemy_behaviour : MonoBehaviour
             rotation.y = 0;
         }
 
-        //Ternary Operator
-        //rotation.y = (currentTarget.position.x < transform.position.x) ? rotation.y = 180f : rotation.y = 0f;
+       
+       
 
         transform.eulerAngles = rotation;
     }

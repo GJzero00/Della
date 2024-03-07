@@ -15,12 +15,6 @@ public class Playercontroller : MonoBehaviour
     public Transform groundCheck;
     public LayerMask ground;
     public LayerMask runcoolground;
-    
-
-
-   
-
-    
 
     [Header("Dash Controll")]
     public float dashTime; 
@@ -38,19 +32,12 @@ public class Playercontroller : MonoBehaviour
     bool jumpPressed;
     int jumpCount;
 
-    [Header("SomeThingWithrancool")]
+    [Header("Parkour Platform Drop")]
     public float restoreTime;
     private bool isOneWayPlatform;
     
 
-    /* [Header("wallcheck")]
-     public LayerMask whatIsGround;
-     public Transform wallCheck;
-     public float wallCheckDistance;
-     public bool isTouchingWall;
-     public bool isWallSliding;
-     public float wallSlideSpeed;
-     */
+   
 
 
     void Start()
@@ -64,7 +51,6 @@ public class Playercontroller : MonoBehaviour
     void Update()
     {
        
-       // CheckIfWallSliding();
         
         if (Input.GetButtonDown("Jump") && jumpCount > 0)
         {
@@ -82,29 +68,10 @@ public class Playercontroller : MonoBehaviour
            
                
         }
-        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.W))
-        {
-            if (Time.time >= (lastDash + SkillCoolDown))
-            {
-                
-                CD();
-            }
-        }
-        
+      
     }
 
-    /*  private void CheckIfWallSliding()
-      {
-          if(isTouchingWall  && !isGround )
-          {
-              isWallSliding = true;
-          }
-          else
-          {
-              isWallSliding = false;
-          }
-
-      }*/
+    
     public void FixedUpdate()
     {
 
@@ -113,15 +80,12 @@ public class Playercontroller : MonoBehaviour
                    
         isOneWayPlatform = Physics2D.OverlapCircle(groundCheck.position, 0.1f, runcoolground);
 
-       // isTouchingWall = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, whatIsGround);
+       
        
         Dash();
         if (isDashing)
             return;
 
-        skill();
-        if (isSkill)
-            return;
 
         GroundMovement();
       
@@ -144,13 +108,7 @@ public class Playercontroller : MonoBehaviour
               transform.localScale = new Vector3(horizontalMove, 1, 1);
        }
 
-     /*   if (isWallSliding)
-        {
-            if (rb.velocity.y < -wallSlideSpeed)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, -wallSlideSpeed);
-            }
-        }*/
+    
     }
     
     void Jump()
@@ -195,15 +153,7 @@ public class Playercontroller : MonoBehaviour
     }
 
    
-    void CD()
-    {
-        isSkill = true;
-
-        SkillTimeLeft = dashTime;
-
-        lastDash = Time.time;
-        
-    }
+  
 
     void Dash()
     {
@@ -219,12 +169,12 @@ public class Playercontroller : MonoBehaviour
             {
                 
                 isDashing = false;
-                coll.enabled = true; // 重新啟用碰撞體
+                coll.enabled = true;  //when dash is finish , turn it on 
             }
         }
         else
         {
-            // 如果 Dash 未激活，檢查冷卻時間
+            // If Dash is not active, check cooldown time
             if (Time.time >= (lastDash + dashCoolDown))
             {
                 if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -237,33 +187,20 @@ public class Playercontroller : MonoBehaviour
 
     void ReadyToDash()
     {
-        // 確定是否可以 Dash，如果是，設置 Dash 的相關變數
+        //Determine whether Dash can be used, and if so, set Dash-related variables
         if (Time.time >= (lastDash + dashCoolDown))
         {
             isDashing = true;
             dashTimeLeft = dashTime;
             lastDash = Time.time;
-            coll.enabled = false; // 關閉碰撞體
-            
+            coll.enabled = false; // close coll to be Invincible because no coll will be trigger
+
+
         }
     }
 
 
 
-    void skill()
-    {
-        if (isSkill)
-        {
-            if(SkillTimeLeft > 0)
-            {
-                SkillTimeLeft -= Time.deltaTime;
-            }
-        }
-        if (SkillTimeLeft <= 0)
-        {
-            isSkill = false;
-        }
-    }
     
     void OnWayPlatformCheck()
     {
@@ -289,13 +226,5 @@ public class Playercontroller : MonoBehaviour
         }
     }
 
-   /* private void OnDrawGizmos()
-    {
-        Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y, wallCheck.position.z));
-    }
 
-    private void UpdateAnimations()
-    {
-        anim.SetBool("isWallSliding", isWallSliding);
-    }*/
 }

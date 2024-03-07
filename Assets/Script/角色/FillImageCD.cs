@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class FillImageCD : MonoBehaviour
 {
-    public Image filledImageQ;  // 对应技能Q的填充图
-    public Image filledImageW;  // 对应技能W的填充图
+    public Image filledImageQ;  
+    public Image filledImageW;  
 
     PlayerAttack playerAttack;
 
