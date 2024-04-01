@@ -3837,7 +3837,7 @@ GameObject:
   - component: {fileID: 4597784098439439115}
   m_Layer: 5
   m_Name: Button (1)
-  m_TagString: Untagged
+  m_TagString: SaveButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3943,9 +3943,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: NewPlayerData, Assembly-CSharp
-        m_MethodName: Save
+      - m_Target: {fileID: 7714649196914409223, guid: 1eef60acef504ed47abfee0414581cc8, type: 3}
+        m_TargetAssemblyTypeName: SaveNowScene, Assembly-CSharp
+        m_MethodName: SaveCurrentScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
